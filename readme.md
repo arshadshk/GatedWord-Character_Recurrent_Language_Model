@@ -13,7 +13,7 @@ Where g is a value between 0 and 1.
 In the paper the value of g is choosen from - {0.25, 0.5, 0.75}.  
 * Gated Word and  Character adaptive - This model uses adaptive gating values to combine vector representation of word constructed from character inputs.     
 
-![Model Architecture](https://github.com/arshadshk/GatedWord-Character_Recurrent_Language_Model/blob/master/model_architecture.JPG =300x300)  
+<img src="https://github.com/arshadshk/GatedWord-Character_Recurrent_Language_Model/blob/master/model_architecture.JPG" width="300" height="400" />
 
 The gate can be efficiently trained so that the
 model can find a good balance between the word level and character-level inputs.gate that adaptively finds the optimal mixture of the character-level and wordlevel inputs. The gate creates the final vector representation of a word by combining two distinct representations of the word. The character-level inputs are converted into vector representations of words using a bidirectional LSTM. The word-level inputs are projected into another high-dimensional space by a word lookup table. The final vector representations of words are used in the LSTM language model which predicts the next word given all the preceding words. Our model with the gating mechanism effectively utilizes the character-level inputs for rare and out-ofvocabulary words and outperforms word-level language models on several English corpora.[1]
